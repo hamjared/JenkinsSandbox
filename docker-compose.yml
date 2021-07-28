@@ -22,3 +22,11 @@ services:
     container_name: Development-Client-Master
     volumes:
       - ./jenkins_dev_cm_home:/var/jenkins_dev_cm_home
+
+   Build-Agent-1:
+     image: openjdk
+     privileged: true
+     user: root
+     ports:
+       - 22:22
+    container_name: Build-Agent-1
