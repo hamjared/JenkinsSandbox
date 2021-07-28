@@ -10,7 +10,7 @@ services:
       - 8080:8080
     container_name: Sandbox-Client-Master
     volumes:
-      - jenkins_sandbox_cm_home:/var/jenkins_home
+      - jenkins_sandbox_cm_home:/var/jenkins_sandbox_cm_home
 
   Development-Client-Master:
     image: jenkins/jenkins:lts
@@ -21,4 +21,4 @@ services:
       - 8090:8080
     container_name: Development-Client-Master
     volumes:
-      - jenkins_dev_cm_home:/var/jenkins_home
+      - jenkins_dev_cm_home:/var/jenkins_dev_cm_home
