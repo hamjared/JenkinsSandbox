@@ -25,6 +25,8 @@ services:
 
   Build-Agent-One:
     image: ubuntu:latest
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
     ports:
       - 22:22
     container_name: Build-Agent-1
