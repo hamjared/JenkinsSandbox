@@ -23,10 +23,8 @@ services:
     volumes:
       - ./jenkins_dev_cm_home:/var/jenkins_dev_cm_home
 
-  Build-Agent-1:
+  Build-Agent-One:
     image: ubuntu:latest
-    privileged: true
-    user: root
     ports:
       - 22:22
     container_name: Build-Agent-1
