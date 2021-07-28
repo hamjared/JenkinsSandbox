@@ -24,7 +24,7 @@ services:
       - ./jenkins_dev_cm_home:/var/jenkins_dev_cm_home
 
   Build-Agent-One:
-    image: ubuntu:latest
+    image: openjdk:11
     stdin_open: true # docker run -i
     tty: true        # docker run -t
     ports:
